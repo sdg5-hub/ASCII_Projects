@@ -46,7 +46,7 @@ No frameworks were summoned in the making of this knight.
 
 That's it. No installation. No build command. The knight is already dressed and ready.
 
-Alternatively, download the repository as a ZIP, extract it, and open `index.html`.
+Alternatively, download the repository as a ZIP, extract it, and open `knight.html`.
 
 ## 🎛️ Customization
 
