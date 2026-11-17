@@ -171,9 +171,8 @@ function cloth(pts, hws, t, k, tatter, ph) {
 
 function scarf(t) {
   STRANDS.forEach((S, k) => { const { pts, hws } = strandPoints(S, t, k); cloth(pts, hws, t, k, true, S.ph); });
-  const wob = 0.35 * Math.sin(TAU * t / LOOP);                          // ผ้าพันคอขยับนิด ๆ
+  const wob = 0.35 * Math.sin(TAU * t / LOOP);                          
   WRAP.forEach((P, k) => cloth(P.pts.map(([x, y], i) => [x, y + wob * Math.sin(i * 1.3 + k)]), P.hws, t, 9 + k, false, 0.7 + k));
-  // เศษผ้าปลิวออกจากปลาย
   const NP = 22;
   for (let p = 0; p < NP; p++) {
     const S = STRANDS[p % STRANDS.length];
