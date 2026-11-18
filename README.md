@@ -17,7 +17,7 @@ No frameworks, external libraries, or downloaded assets. Just HTML files you can
 
 ## ⚔️ ASCII Knight
 
-A knight. A red cloak. Absolutely no intention of leaving the field.
+A knight. A red cloak. Absolutely no intention of leaving the field. (Inspired from a game I played called Blasphemous)
 
 An animated ASCII scene featuring an armored knight surrounded by swaying grass and drifting particles. Layered waves move the red fabric and cloak, while subtle breathing and swaying keep the knight from looking completely frozen.
 
