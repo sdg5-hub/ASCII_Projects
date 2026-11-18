@@ -1,59 +1,121 @@
-# ⚔️ ASCII Knight
+# ASCII Projects
 
-A knight. A red cloak. An unreasonable amount of wind.
+A knight holding his ground. Lilies taking their time to bloom. An unreasonable amount of wind.
 
-An animated ASCII scene built with vanilla JavaScript and HTML5 Canvas. An armored knight stands in a windswept field while fabric ripples, grass sways, and particles drift through the air.
+Animated ASCII scenes built with vanilla JavaScript and HTML5 Canvas. Each project turns characters into a colorful, moving scene using procedural animation and pixel-based rendering.
 
-No game objectives. No inventory management. Just a knight holding his ground and looking dramatically unavailable.
+No frameworks, external libraries, or downloaded assets. Just HTML files you can open in your browser.
 
-## ✨ Features
+## 🎨 Projects
 
-- **ASCII rendering** — symbols create the knight, fabric, grass, and floating particles.
-- **Flowing red fabric** — layered waves animate the fabric to give it a windswept appearance.
-- **Animated cloak** — the loose edges shift and flutter.
-- **Idle movement** — subtle breathing and swaying keep the knight from looking completely frozen.
+| Project | File | Scene |
+|---------|------|-------|
+| ⚔️ ASCII Knight | [`knight.html`](knight.html) | An armored knight in a windswept field with flowing red fabric, animated grass, and drifting particles |
+| 🌸 ASCII Lily Bouquet | [`lily.html`](lily.html) | A colorful bouquet with growing stems, unfurling leaves, blooming lilies, and floating golden particles |
+
+> GitHub displays HTML source code. To view an animation, download the files and open the corresponding HTML file in your browser.
+
+## ⚔️ ASCII Knight
+
+A knight. A red cloak. Absolutely no intention of leaving the field.
+
+An animated ASCII scene featuring an armored knight surrounded by swaying grass and drifting particles. Layered waves move the red fabric and cloak, while subtle breathing and swaying keep the knight from looking completely frozen.
+
+### Features
+
+- **ASCII rendering** — characters form the knight, fabric, grass, and particles.
+- **Flowing red fabric** — layered waves create continuous movement.
+- **Animated cloak** — loose edges shift and flutter in the wind.
+- **Idle movement** — breathing and swaying add subtle motion.
 - **Procedural grass** — blades vary in height, depth, color, and movement.
-- **Traveling wind gusts** — waves of wind pass through the field.
-- **Floating particles** — because standing in a field should apparently be cinematic.
-- **Soft glow** — adds a little atmosphere to the scene.
+- **Traveling wind gusts** — waves of wind move through the field.
+- **Floating particles** — a little extra atmosphere.
+- **Soft glow** — compositing adds light around the scene.
 - **Responsive display** — the canvas scales to fit the browser window.
-- **Self-contained** — no external libraries, downloaded assets, or build tools.
+
+No game objectives. No inventory management. Just a knight looking dramatically unavailable.
+
+## 🌸 ASCII Lily Bouquet
+
+Flowers, except every petal is made of characters and none of them need watering.
+
+An animated ASCII bouquet featuring pink, white, yellow, orange, coral, and red lilies. Stems grow upward, leaves unfurl as the stems reach them, and flowers gradually open into layered blooms.
+
+The bouquet sways in the wind while golden particles drift upward through the background.
+
+### Features
+
+- **Growing stems** — staggered growth brings the bouquet into view.
+- **Unfurling leaves** — leaves open as their stems grow past their attachment points.
+- **Blooming flowers** — buds swell, gain color, and gradually open.
+- **3D petal geometry** — petals are constructed in three dimensions and projected onto the canvas.
+- **Six-petal blooms** — alternating inner and outer petals form each lily.
+- **Multiple color palettes** — six flower colors with different shading and speckle patterns.
+- **Curled petal tips** — petals bend backward as the flowers open.
+- **Flower details** — stamens, anthers, and a central pistil appear during blooming.
+- **Natural leaf shapes** — leaves droop, fold, and twist to reveal their undersides.
+- **Wind animation** — higher parts of the bouquet sway more strongly.
+- **Gentle bloom movement** — open flowers subtly expand and contract.
+- **Floating golden particles** — firefly-like points rise around the bouquet.
+- **Soft glow** — downscaled image layers create a diffuse lighting effect.
+- **Responsive layout** — the character grid adapts to the window proportions.
+
+A bouquet with a slightly more demanding relationship with your CPU than a normal bouquet.
 
 ## 🛠️ Built With
 
 | Technology | Role |
-| --- | --- |
+|------------|------|
 | HTML | Page structure and canvas |
 | CSS | Fullscreen layout and dark background |
-| JavaScript | Animation, procedural movement, and rendering |
-| Canvas 2D API | Drawing and compositing the scene |
+| JavaScript | Scene construction, animation, and rendering |
+| Canvas 2D API | Character masks, image buffers, and compositing |
+| Typed arrays | Brightness, color, and pixel data |
+| `requestAnimationFrame` | Scheduling animation frames |
 
-No frameworks were summoned in the making of this knight.
+Each scene is self-contained in its own HTML file.
 
 ## 🚀 Getting Started
 
-### Run locally
+### Clone the repository
 
-1. Clone the repository:
+```bash
+git clone https://github.com/sdg5-hub/ASCII_Projects.git
+cd ASCII_Projects
+```
 
-   git clone https://github.com/sdg5-hub/Knight_HTML_ASCII.git
+### Open a scene
 
-2. Open the project folder:
+Open either file directly in your browser:
 
-   cd Knight_HTML_ASCII
+- `knight.html`
+- `lily.html`
 
-3. Open `index.html` in your browser.
+No installation or build command is required.
 
-That's it. No installation. No build command. The knight is already dressed and ready.
+Alternatively, select **Code → Download ZIP** on GitHub, extract the archive, and open either HTML file.
 
-Alternatively, download the repository as a ZIP, extract it, and open `knight.html`.
+### Optional: Run a local server
+
+If you prefer serving the files locally and have Python installed:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit:
+
+- Knight: http://localhost:8000/knight.html
+- Lilies: http://localhost:8000/lily.html
 
 ## 🎛️ Customization
 
-The main settings are near the top of the script in `index.html`.
+Edit the settings near the top of each file's script, save the file, and refresh your browser.
+
+### Knight settings
 
 | Setting | What it controls |
-| --- | --- |
+|---------|------------------|
 | `LOOP` | Duration of the main fabric animation cycle |
 | `WAVE` | Strength of the fabric waves |
 | `GLOW` | Intensity of the soft glow |
@@ -66,70 +128,112 @@ The main settings are near the top of the script in `index.html`.
 | `FONT_SIZE` | Size of the rendered characters |
 | `FPS` | Target rendering frame rate |
 
-Colors are also defined near the top of the script, including the background, armor, red fabric, and grass.
+Colors for the background, armor, red fabric, and grass are also defined in the script.
 
-Experiment with small changes first. Increasing every setting at once may turn a peaceful field into the knight's least favorite weather forecast.
+### Lily settings
+
+| Setting | What it controls |
+|---------|------------------|
+| `FONT_SIZE` | Size of the rendered characters |
+| `FPS` | Target rendering frame rate |
+| `ROWS` | Number of rows in the character grid |
+| `WAVE_PERIOD` | Base period used by the wave functions |
+| `BREATH` | Duration of the gentle bloom movement cycle |
+| `BREATH_DEPTH` | How much open flowers contract during that cycle |
+| `settings.wind` | Strength of the bouquet's swaying |
+| `settings.size` | Size multiplier for the main flowers |
+| `settings.glow` | Intensity of the glow effect |
+| `STEM_DUR` | Duration of stem growth in seconds |
+
+Additional scene data:
+
+| Object | Purpose |
+|--------|---------|
+| `PALETTES` | Flower colors, highlights, and speckle density |
+| `FLOWERS_BASE` | Main flower positions, sizes, directions, colors, and bloom timing |
+| `BUDS_BASE` | Bud positions, sizes, directions, maturity, and colors |
+| `BUCKETS` | Character groups used for different brightness levels |
+| `LEVELS` | Brightness thresholds for selecting character groups |
+
+Try small changes first. Maximum wind and maximum flower size may produce a bouquet with strong opinions.
 
 ## 🧠 How It Works
 
-### 1. Represent the knight as brightness data
+Both projects follow the same general rendering approach: construct a scene, animate its properties, convert brightness into characters, and draw the result.
 
-The knight's silhouette and details are stored in a grid of hexadecimal brightness values. The renderer samples this grid to determine which parts of the knight appear at each position.
+### 1. Construct the scene
 
-### 2. Animate the scene
+**Knight:** A grid of hexadecimal brightness values describes the knight's silhouette and details. Additional drawing logic builds the surrounding fabric, grass, and particles.
 
-Time-based wave functions move the fabric, cloak, grass, and particles. Breathing and swaying apply small offsets to the knight, with less movement near the feet.
+**Lilies:** Curved stems and tapered leaves form the bouquet. Each flower uses six petals built from 3D geometry, projected into two dimensions and drawn from back to front.
 
-He has excellent balance. It comes with the job.
+### 2. Animate with time
 
-### 3. Convert brightness into characters
+Wave functions create wind, fabric movement, breathing, and swaying.
 
-Brightness levels map to groups of ASCII symbols. Sparse characters represent darker areas, while denser characters represent brighter areas.
+The lily scene also uses timed growth stages:
 
-Character selection stays consistent at each grid position to reduce random visual flicker.
+1. Stems grow upward.
+2. Leaves unfurl as the stems reach them.
+3. Buds appear and swell.
+4. Flowers gain color and open.
+5. Open blooms continue moving gently in the breeze.
 
-### 4. Draw and composite
+### 3. Map brightness to characters
 
-Character masks are drawn into an image buffer, then displayed on the main canvas. Smaller copies of the scene are composited back over it to create the glow effect.
+Each cell in the scene stores brightness and color information.
 
-### 5. Repeat
+Brightness selects a group of ASCII characters. Sparse symbols represent darker areas, while denser symbols represent brighter areas.
 
-`requestAnimationFrame` schedules the animation, while a frame-rate limit controls how often the scene is rendered.
+### 4. Render character masks
 
-The knight continues his shift indefinitely.
+Characters are rendered into reusable masks. The renderer combines those masks with the scene's color data to write pixels into an image buffer.
+
+This creates the appearance of a picture assembled from colored text.
+
+### 5. Composite the glow
+
+Smaller copies of the rendered scene are enlarged and blended over the original to create a soft glow.
+
+### 6. Draw the next frame
+
+`requestAnimationFrame` schedules updates, while an FPS limit controls how frequently the scene is rendered.
+
+The knight continues his shift. The flowers continue being flowers.
 
 ## 📁 Project Structure
 
-    Knight_HTML_ASCII/
-    ├── index.html   # Complete scene, styling, and animation
-    ├── README.md    # You are here
-    └── LICENSE      # License terms, if included
+- **`knight.html`** — Complete knight scene, styling, settings, and animation.
+- **`lily.html`** — Complete lily bouquet scene, styling, settings, and animation.
+- **`README.md`** — Project documentation.
+- **`LICENSE`** — MIT license terms.
 
-All animation code and scene data live in `index.html`.
+Each HTML file runs independently.
 
 ## ⚡ Performance Notes
 
-The scene renders many individual characters and updates them throughout the animation. Performance depends on your device, browser, and canvas dimensions.
+These scenes update many character cells and pixels throughout the animation. Performance depends on your device, browser, and rendering dimensions.
 
-If the animation feels slow:
+If an animation feels slow:
 
 - Lower `FPS` to reduce rendering frequency.
-- Set `GLOW` to `0` to disable glow compositing.
-- Reduce the number of grass blades or floating particles in the script.
+- Disable glow with `GLOW = 0` for the knight or `settings.glow = 0` for the lilies.
+- Reduce grass or particle counts in the knight scene.
+- Lower `ROWS` in the lily scene to reduce the character grid resolution.
 
-Lowering wind strength changes the movement, but does not significantly reduce the amount of rendering work.
+Reducing wind strength changes the movement but does not significantly reduce rendering work.
 
 ## 💡 Possible Future Additions
 
-Ideas for future development:
-
 - Pause and resume controls
+- Replay controls for the lily growth sequence
 - A reduced-motion mode
-- Interactive wind settings
+- Interactive settings
 - Alternate color palettes
-- Rain, snow, or falling embers
 - Screenshot export
-- More ASCII characters and scenes
+- Rain, snow, or falling embers
+- Additional flowers and ASCII scenes
+- A shared gallery page
 
 A horse remains outside the current transportation budget.
 
@@ -137,9 +241,9 @@ A horse remains outside the current transportation budget.
 
 Improvements, bug fixes, and creative experiments are welcome.
 
-For larger changes, open an issue first to discuss the idea. For smaller fixes, feel free to submit a pull request.
+For larger changes, open an issue to discuss the idea first. For smaller fixes, feel free to submit a pull request.
 
-Please include a short explanation of what changed and, for visual updates, a screenshot or recording.
+Include a short explanation of what changed and, for visual updates, a screenshot or recording.
 
 ## 📄 License
 
