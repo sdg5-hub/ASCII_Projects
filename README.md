@@ -1,79 +1,110 @@
 # ASCII Projects
 
-A knight holding his ground. Lilies taking their time to bloom. An unreasonable amount of wind.
+A knight holding his ground. Lilies taking their time to bloom. An eye with an entire universe inside it.
 
-Animated ASCII scenes built with vanilla JavaScript and HTML5 Canvas. Each project turns characters into a colorful, moving scene using procedural animation and pixel-based rendering.
+A collection of animated ASCII scenes built with JavaScript, HTML5 Canvas, Python, NumPy, and Tkinter.
 
-No frameworks, external libraries, or downloaded assets. Just HTML files you can open in your browser.
+Each project creates moving images from colored text characters, procedural geometry, and time-based animation.
 
 ## 🎨 Projects
 
-| Project | File | Scene |
-|---------|------|-------|
-| ⚔️ ASCII Knight | [`knight.html`](knight.html) | An armored knight in a windswept field with flowing red fabric, animated grass, and drifting particles |
-| 🌸 ASCII Lily Bouquet | [`lily.html`](lily.html) | A colorful bouquet with growing stems, unfurling leaves, blooming lilies, and floating golden particles |
+| Project | File | Platform | Scene |
+|---------|------|----------|-------|
+| ⚔️ ASCII Knight | [`knight.html`](knight.html) | Browser | An armored knight in a windswept field |
+| 🌸 ASCII Lily Bouquet | [`lily.html`](lily.html) | Browser | Growing stems, unfurling leaves, and colorful blooming lilies |
+| 👁️ Eye → Space | [`eye_space.py`](eye_space.py) | Python desktop | An opening eye that transitions into a starfield and heart-shaped nebula |
 
-> GitHub displays HTML source code. To view an animation, download the files and open the corresponding HTML file in your browser.
+> GitHub displays source code. Download or clone the repository, then follow the instructions below to run each animation.
 
 ## ⚔️ ASCII Knight
 
-A knight. A red cloak. Absolutely no intention of leaving the field. (Inspired from a game I played called Blasphemous)
+A knight. A red cloak. Absolutely no intention of leaving the field.
 
-An animated ASCII scene featuring an armored knight surrounded by swaying grass and drifting particles. Layered waves move the red fabric and cloak, while subtle breathing and swaying keep the knight from looking completely frozen.
+An animated scene featuring an armored knight surrounded by swaying grass and drifting particles. Layered waves move the red fabric and cloak, while subtle breathing and swaying give the character a sense of life.
 
 ### Features
 
-- **ASCII rendering** — characters form the knight, fabric, grass, and particles.
-- **Flowing red fabric** — layered waves create continuous movement.
-- **Animated cloak** — loose edges shift and flutter in the wind.
-- **Idle movement** — breathing and swaying add subtle motion.
-- **Procedural grass** — blades vary in height, depth, color, and movement.
-- **Traveling wind gusts** — waves of wind move through the field.
-- **Floating particles** — a little extra atmosphere.
-- **Soft glow** — compositing adds light around the scene.
-- **Responsive display** — the canvas scales to fit the browser window.
+- ASCII rendering for the knight, fabric, grass, and particles.
+- Flowing red fabric animated with layered waves.
+- A fluttering cloak.
+- Subtle breathing and body movement.
+- Procedural grass with variations in height, depth, color, and motion.
+- Traveling wind gusts.
+- Drifting particles.
+- Soft glow compositing.
+- A canvas that scales to fit the browser window.
+- A self-contained HTML file with no external dependencies.
 
 No game objectives. No inventory management. Just a knight looking dramatically unavailable.
 
 ## 🌸 ASCII Lily Bouquet
 
-Flowers, except every petal is made of characters and none of them need watering.
+Flowers made of characters. Watering is optional. Electricity is less optional.
 
-An animated ASCII bouquet featuring pink, white, yellow, orange, coral, and red lilies. Stems grow upward, leaves unfurl as the stems reach them, and flowers gradually open into layered blooms.
+A colorful bouquet of pink, white, yellow, orange, coral, and red lilies. Stems grow upward, leaves unfurl, and buds gradually open into layered flowers.
 
-The bouquet sways in the wind while golden particles drift upward through the background.
+The bouquet sways in the wind while golden particles float through the background.
 
 ### Features
 
-- **Growing stems** — staggered growth brings the bouquet into view.
-- **Unfurling leaves** — leaves open as their stems grow past their attachment points.
-- **Blooming flowers** — buds swell, gain color, and gradually open.
-- **3D petal geometry** — petals are constructed in three dimensions and projected onto the canvas.
-- **Six-petal blooms** — alternating inner and outer petals form each lily.
-- **Multiple color palettes** — six flower colors with different shading and speckle patterns.
-- **Curled petal tips** — petals bend backward as the flowers open.
-- **Flower details** — stamens, anthers, and a central pistil appear during blooming.
-- **Natural leaf shapes** — leaves droop, fold, and twist to reveal their undersides.
-- **Wind animation** — higher parts of the bouquet sway more strongly.
-- **Gentle bloom movement** — open flowers subtly expand and contract.
-- **Floating golden particles** — firefly-like points rise around the bouquet.
-- **Soft glow** — downscaled image layers create a diffuse lighting effect.
-- **Responsive layout** — the character grid adapts to the window proportions.
+- Staggered stem growth.
+- Leaves that unfurl as their stems reach them.
+- Buds that swell, gain color, and bloom.
+- Six-petal flowers constructed from projected 3D geometry.
+- Alternating inner and outer petals with curled tips.
+- Six color palettes with highlights and varying speckle patterns.
+- Stamens, anthers, and central pistils.
+- Leaves that droop, fold, twist, and reveal their undersides.
+- Wind displacement that increases toward the top of the bouquet.
+- Gentle movement in fully opened blooms.
+- Floating golden particles and a faint purple background.
+- Soft glow and a responsive character grid.
+- A self-contained HTML file with no external dependencies.
 
-A bouquet with a slightly more demanding relationship with your CPU than a normal bouquet.
+## 👁️ Eye → Space
+
+Look closely. Then keep looking.
+
+A Python desktop animation that begins with an opening eye, moves through its pupil, and reveals a colorful starfield. A glowing cloud gradually takes the shape of a heart while shooting stars and a comet move through the scene.
+
+The image is rendered as colored text inside a Tkinter window.
+
+### Features
+
+- Animated eyelid opening and a timed blink.
+- Small gaze shifts before the zoom begins.
+- A procedurally textured amber iris.
+- Radial iris fibers, dark crevices, and a shaded outer edge.
+- Pupil dilation and subtle movement.
+- Procedural skin shading, an eyebrow, veins, and eye reflections.
+- Curved upper and lower eyelashes drawn with directional characters.
+- A gradual zoom through the pupil into space.
+- A depth-based starfield with varied colors, brightness, and twinkling.
+- Bright stars with character-based diffraction spikes.
+- Shooting stars with fading directional trails.
+- A slower comet with a soft tail.
+- A pink nebula that gradually becomes heart-shaped.
+- Gentle pulsing in the heart nebula.
+- Supersampled scene rendering and bloom.
+- Adaptive limits on Tkinter cell updates.
+- Keyboard controls for restarting and closing the animation.
+
+Apparently, eye contact now requires a graphics pipeline.
 
 ## 🛠️ Built With
 
 | Technology | Role |
 |------------|------|
-| HTML | Page structure and canvas |
-| CSS | Fullscreen layout and dark background |
-| JavaScript | Scene construction, animation, and rendering |
+| HTML and CSS | Browser scene structure, layout, and backgrounds |
+| JavaScript | Browser animation, geometry, and rendering |
 | Canvas 2D API | Character masks, image buffers, and compositing |
-| Typed arrays | Brightness, color, and pixel data |
-| `requestAnimationFrame` | Scheduling animation frames |
+| Python | Desktop animation and scene logic |
+| NumPy | Textures, coordinate grids, shading, and image calculations |
+| Tkinter | Desktop window, text rendering, and keyboard controls |
 
-Each scene is self-contained in its own HTML file.
+The browser projects require no package installation.
+
+The Python project requires NumPy and a Python installation with Tkinter support.
 
 ## 🚀 Getting Started
 
@@ -84,20 +115,18 @@ git clone https://github.com/sdg5-hub/ASCII_Projects.git
 cd ASCII_Projects
 ```
 
-### Open a scene
+Alternatively, select **Code → Download ZIP** on GitHub and extract the archive.
 
-Open either file directly in your browser:
+### Run the browser projects
+
+Open either file in your browser:
 
 - `knight.html`
 - `lily.html`
 
-No installation or build command is required.
+No installation, build command, or local server is required.
 
-Alternatively, select **Code → Download ZIP** on GitHub, extract the archive, and open either HTML file.
-
-### Optional: Run a local server
-
-If you prefer serving the files locally and have Python installed:
+If you prefer using a local server:
 
 ```bash
 python3 -m http.server 8000
@@ -108,134 +137,187 @@ Then visit:
 - Knight: http://localhost:8000/knight.html
 - Lilies: http://localhost:8000/lily.html
 
+### Run Eye → Space
+
+Install NumPy:
+
+```bash
+python3 -m pip install numpy
+```
+
+Run the animation:
+
+```bash
+python3 eye_space.py
+```
+
+The program prints `Preparing textures...` before opening its animation window.
+
+Tkinter must be available in your Python installation. You can check it with:
+
+```bash
+python3 -m tkinter
+```
+
+If Tkinter is missing, install the Tkinter support provided by your Python distribution or operating system.
+
+### Eye → Space controls
+
+| Key | Action |
+|-----|--------|
+| `R` | Restart the animation sequence |
+| `Esc` | Close the window |
+
 ## 🎛️ Customization
 
-Edit the settings near the top of each file's script, save the file, and refresh your browser.
+Settings are defined near the top of each project's source file.
 
 ### Knight settings
 
 | Setting | What it controls |
 |---------|------------------|
-| `LOOP` | Duration of the main fabric animation cycle |
-| `WAVE` | Strength of the fabric waves |
-| `GLOW` | Intensity of the soft glow |
-| `BREATH` | Amount of vertical breathing movement |
-| `SWAY` | Amount of side-to-side movement |
-| `CLOAK` | Strength of the cloak's flutter |
-| `GRASS_WIND` | Wind strength affecting the grass |
+| `LOOP` | Main fabric animation cycle duration |
+| `WAVE` | Fabric wave strength |
+| `GLOW` | Glow intensity |
+| `BREATH` | Vertical breathing movement |
+| `SWAY` | Side-to-side movement |
+| `CLOAK` | Cloak flutter strength |
+| `GRASS_WIND` | Wind movement in the grass |
 | `GRASS_HEIGHT` | Grass height multiplier |
-| `HORIZON` | Vertical position of the field's horizon |
-| `FONT_SIZE` | Size of the rendered characters |
-| `FPS` | Target rendering frame rate |
-
-Colors for the background, armor, red fabric, and grass are also defined in the script.
+| `HORIZON` | Field horizon position |
+| `FONT_SIZE` | Character size |
+| `FPS` | Target frame rate |
 
 ### Lily settings
 
 | Setting | What it controls |
 |---------|------------------|
-| `FONT_SIZE` | Size of the rendered characters |
-| `FPS` | Target rendering frame rate |
-| `ROWS` | Number of rows in the character grid |
-| `WAVE_PERIOD` | Base period used by the wave functions |
-| `BREATH` | Duration of the gentle bloom movement cycle |
-| `BREATH_DEPTH` | How much open flowers contract during that cycle |
-| `settings.wind` | Strength of the bouquet's swaying |
-| `settings.size` | Size multiplier for the main flowers |
-| `settings.glow` | Intensity of the glow effect |
-| `STEM_DUR` | Duration of stem growth in seconds |
+| `FONT_SIZE` | Character size |
+| `FPS` | Target frame rate |
+| `ROWS` | Character grid height |
+| `WAVE_PERIOD` | Base wave period |
+| `BREATH` | Bloom movement cycle duration |
+| `BREATH_DEPTH` | Amount of bloom contraction |
+| `settings.wind` | Bouquet sway strength |
+| `settings.size` | Main flower size multiplier |
+| `settings.glow` | Glow intensity |
+| `STEM_DUR` | Stem growth duration |
 
-Additional scene data:
+Additional objects define the bouquet:
 
-| Object | Purpose |
-|--------|---------|
-| `PALETTES` | Flower colors, highlights, and speckle density |
-| `FLOWERS_BASE` | Main flower positions, sizes, directions, colors, and bloom timing |
-| `BUDS_BASE` | Bud positions, sizes, directions, maturity, and colors |
-| `BUCKETS` | Character groups used for different brightness levels |
-| `LEVELS` | Brightness thresholds for selecting character groups |
+- `PALETTES` — flower colors, highlights, and speckle density.
+- `FLOWERS_BASE` — main flower positions, sizes, directions, colors, and timing.
+- `BUDS_BASE` — bud positions, sizes, directions, maturity, and colors.
+- `BUCKETS` — character groups for different brightness levels.
+- `LEVELS` — brightness thresholds for those groups.
 
-Try small changes first. Maximum wind and maximum flower size may produce a bouquet with strong opinions.
+### Eye → Space settings
+
+| Setting | What it controls |
+|---------|------------------|
+| `SIZE` | Tkinter font size |
+| `FPS` | Target frame rate |
+| `SS` | Supersampling factor |
+| `ASPECT` | Window width-to-height ratio |
+| `MAXROWS` | Maximum character grid height |
+| `TK_MS` | Target time budget for text updates |
+| `T_OPEN` | Eye opening start time |
+| `T_OPEN_D` | Eye opening duration |
+| `T_BLINK` | Blink start time |
+| `T_Z0` | Zoom start time |
+| `T_ZD` | Zoom duration |
+| `ZEND` | Base zoom endpoint |
+| `T_HEART` | Heart transformation start time |
+| `T_HEART_D` | Heart transformation duration |
+| `NS` | Number of star particles |
+| `RAMP` | Characters ordered by visual density |
+| `QL` | Number of color levels per channel |
+
+Timing values are measured in seconds.
+
+The bloom implementation requires supersampled grid dimensions divisible by four. Keep that constraint in mind when changing `SS` or grid dimensions.
 
 ## 🧠 How It Works
 
-Both projects follow the same general rendering approach: construct a scene, animate its properties, convert brightness into characters, and draw the result.
+### Scene construction
 
-### 1. Construct the scene
+**Knight:** Brightness data describes the knight, while procedural elements create fabric, grass, and particles.
 
-**Knight:** A grid of hexadecimal brightness values describes the knight's silhouette and details. Additional drawing logic builds the surrounding fabric, grass, and particles.
+**Lilies:** Curved stems and tapered leaves form the bouquet. Each flower uses six petals constructed in three dimensions, projected into two dimensions, and drawn in depth order.
 
-**Lilies:** Curved stems and tapered leaves form the bouquet. Each flower uses six petals built from 3D geometry, projected into two dimensions and drawn from back to front.
+**Eye → Space:** NumPy coordinate grids describe the eye and space scene. Layered noise generates textures, radial sampling creates iris fibers, and mathematical shape fields form the nebula.
 
-### 2. Animate with time
+### Animation
 
-Wave functions create wind, fabric movement, breathing, and swaying.
+Time-based functions control movement and transitions:
 
-The lily scene also uses timed growth stages:
+- The knight uses waves for fabric, wind, and idle motion.
+- The lilies use timed growth stages followed by continuous swaying.
+- The eye uses opening, blinking, gaze, zoom, and nebula transformation stages.
 
-1. Stems grow upward.
-2. Leaves unfurl as the stems reach them.
-3. Buds appear and swell.
-4. Flowers gain color and open.
-5. Open blooms continue moving gently in the breeze.
+### Character selection
 
-### 3. Map brightness to characters
+Brightness determines which characters appear at each grid position.
 
-Each cell in the scene stores brightness and color information.
+Sparse characters represent darker areas. Denser characters represent brighter details.
 
-Brightness selects a group of ASCII characters. Sparse symbols represent darker areas, while denser symbols represent brighter areas.
+Color is calculated separately, allowing the characters to carry both shape and lighting information.
 
-### 4. Render character masks
+### Rendering
 
-Characters are rendered into reusable masks. The renderer combines those masks with the scene's color data to write pixels into an image buffer.
+The browser scenes use cached character masks and pixel buffers before compositing the result onto a canvas.
 
-This creates the appearance of a picture assembled from colored text.
+Eye → Space averages supersampled image data into character cells, quantizes their colors, and updates Tkinter text items. When many cells change, it prioritizes updates within an adaptive budget.
 
-### 5. Composite the glow
+### Glow
 
-Smaller copies of the rendered scene are enlarged and blended over the original to create a soft glow.
-
-### 6. Draw the next frame
-
-`requestAnimationFrame` schedules updates, while an FPS limit controls how frequently the scene is rendered.
-
-The knight continues his shift. The flowers continue being flowers.
+Downsampled and blended image layers create a soft glow around bright areas.
 
 ## 📁 Project Structure
 
-- **`knight.html`** — Complete knight scene, styling, settings, and animation.
-- **`lily.html`** — Complete lily bouquet scene, styling, settings, and animation.
-- **`README.md`** — Project documentation.
-- **`LICENSE`** — MIT license terms.
+| File | Contents |
+|------|----------|
+| `knight.html` | Complete knight scene, styling, and animation |
+| `lily.html` | Complete lily bouquet scene, styling, and animation |
+| `eye_space.py` | Complete eye-to-space desktop animation |
+| `README.md` | Project documentation |
+| `LICENSE` | MIT license terms |
 
-Each HTML file runs independently.
+Each animation runs independently.
 
 ## ⚡ Performance Notes
 
-These scenes update many character cells and pixels throughout the animation. Performance depends on your device, browser, and rendering dimensions.
+Performance depends on your device, rendering dimensions, character count, and target frame rate.
 
-If an animation feels slow:
+### Browser scenes
 
 - Lower `FPS` to reduce rendering frequency.
-- Disable glow with `GLOW = 0` for the knight or `settings.glow = 0` for the lilies.
+- Set `GLOW = 0` for the knight or `settings.glow = 0` for the lilies to disable glow.
 - Reduce grass or particle counts in the knight scene.
-- Lower `ROWS` in the lily scene to reduce the character grid resolution.
+- Lower `ROWS` in the lily scene to reduce grid resolution.
 
-Reducing wind strength changes the movement but does not significantly reduce rendering work.
+### Eye → Space
+
+- Lower `MAXROWS` to reduce both rendering and text-update work.
+- Lower `FPS` to reduce update frequency.
+- Reduce `NS` to decrease star processing.
+- Adjust `TK_MS` to change the text-update budget.
+
+The configured frame rate is a target; actual performance depends on rendering and UI update costs.
 
 ## 💡 Possible Future Additions
 
+- A shared project gallery
 - Pause and resume controls
-- Replay controls for the lily growth sequence
-- A reduced-motion mode
 - Interactive settings
-- Alternate color palettes
-- Screenshot export
-- Rain, snow, or falling embers
-- Additional flowers and ASCII scenes
-- A shared gallery page
+- Reduced-motion options
+- Alternate palettes
+- Screenshot and recording export
+- Additional flowers and environments
+- More eye colors and nebula shapes
+- A browser version of Eye → Space
 
-A horse remains outside the current transportation budget.
+A horse remains outside the knight's transportation budget.
 
 ## 🤝 Contributing
 
@@ -243,7 +325,7 @@ Improvements, bug fixes, and creative experiments are welcome.
 
 For larger changes, open an issue to discuss the idea first. For smaller fixes, feel free to submit a pull request.
 
-Include a short explanation of what changed and, for visual updates, a screenshot or recording.
+Include a short explanation of what changed and a screenshot or recording for visual updates.
 
 ## 📄 License
 
