@@ -13,7 +13,7 @@ A collection of animated ASCII and text-based scenes for the browser and desktop
 | 👁️ Eye → Space       | [`eye_space.py`](https://github.com/sdg5-hub/ASCII_Projects/blob/main/eye_space.py)   | Tkinter window | An opening eye that transitions into a starfield and heart-shaped nebula |
 | 🌌 ASCII Black Hole   | [`black_hole.py`](https://github.com/sdg5-hub/ASCII_Projects/blob/main/black_hole.py) | Pygame window  | A glowing accretion disk surrounding a dark central shadow               |
 
-| 🌍 Edge Orbit | [`orbit.ts`](https://github.com/sdg5-hub/ASCII_Projects/blob/main/orbit.ts) | TypeScript scene host | Night-side Earth with city lights, a sunrise rim, and animated network requests |
+| 🌍 Edge Orbit | [`orbit.ts`](https://github.com/sdg5-hub/ASCII_Projects/blob/main/orbit.ts) | TypeScript scene host | Night-side Earth with city lights, a sunrise rim, and animated network requests|
 
 > GitHub displays source code. Clone or download the repository, then follow the instructions below to run an animation.
 
