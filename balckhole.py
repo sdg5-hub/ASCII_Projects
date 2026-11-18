@@ -182,7 +182,7 @@ def frame(t, cols, rows, aspect):
 # window
 
 TITLE = "Black Hole - JIN2"
-SIGN = "@jin_22ee · 2026"
+SIGN = "@sdg5-hub · 2026"
 CW, CH, FONT_PX = 7, 11, 12
 W, H = 1080, 960
 COLS, ROWS = W // CW, H // CH
